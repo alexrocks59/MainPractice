@@ -9,82 +9,32 @@ import UIKit
 import LocalAuthentication
 
 class MainViewController: UITabBarController, UITabBarControllerDelegate {
-
+    var authenticate:Bool = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
         title = "Main"
         setupTabViews()
-        startAuthentication()
+        
+      
+       
+    
+       //  startAuthentication()
        
     }
     
     override func viewDidAppear(_ animated: Bool) {
-       
-    }
-    
-    func startAuthentication() {
-        let context = LAContext()
-        var autherror:NSError?
-     
-        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &autherror) {
-            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics,
-                                   localizedReason: "Access requires authentication",
-                                   reply: {(success, error) in
-                                    
-                          DispatchQueue.main.async {
-                              
-                              if let err = error {
-                                  
-                                  switch err._code {
-                                      
-                                  case LAError.Code.systemCancel.rawValue:
-                                      self.notifyUser("Session cancelled",
-                                                      err: err.localizedDescription)
-                                      
-                                  case LAError.Code.userCancel.rawValue:
-                                      self.notifyUser("Please try again",
-                                                      err: err.localizedDescription)
-                                      
-                                  case LAError.Code.userFallback.rawValue:
-                                      self.notifyUser("Authentication",
-                                                      err: "Password option selected")
-                                      // Custom code to obtain password here
-                                      
-                                  default:
-                                      self.notifyUser("Authentication failed",
-                                                      err: err.localizedDescription)
-                                  }
-                                self.view.alpha = 1
-                                  
-                              } else {
-                                  self.notifyUser("Authentication Successful",
-                                                  err: "You now have full access")
-                                  
-                              }
-                          }
-                  })
-           
-       } else {
-                print("biometrics unavailable")
+        if (authenticate) {
+          let login = LoginViewController()
+          login.modalPresentationStyle = .fullScreen
+          self.present(login, animated: true)
+          authenticate = false
         }
-  }
-    
-    func notifyUser(_ msg: String, err: String?) {
-        let alert = UIAlertController(title: msg,
-            message: err,
-            preferredStyle: .alert)
-
-        let cancelAction = UIAlertAction(title: "OK",
-            style: .cancel, handler: nil)
-
-        alert.addAction(cancelAction)
-
-        self.present(alert, animated: true,
-                            completion: nil)
+        print (AppSettings.shared.settings)
     }
-
+    
+  
 
     func setupTabViews() {
         

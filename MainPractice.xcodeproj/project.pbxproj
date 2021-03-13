@@ -10,6 +10,8 @@
 		84043A8C25F6A1C300346170 /* DetaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84043A8B25F6A1C300346170 /* DetaiViewController.swift */; };
 		84043A9125F6C96300346170 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84043A9025F6C96300346170 /* ModalViewController.swift */; };
 		84043A9925F6D03500346170 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84043A9825F6D03500346170 /* MapViewController.swift */; };
+		847D4D3C25FD4B3E00189082 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D4D3B25FD4B3500189082 /* LoginViewController.swift */; };
+		847D4D4725FD684900189082 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847D4D4625FD684900189082 /* AppSettings.swift */; };
 		84BB5E7725F653D700AE8CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E7625F653D700AE8CA2 /* AppDelegate.swift */; };
 		84BB5E7925F653D700AE8CA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E7825F653D700AE8CA2 /* SceneDelegate.swift */; };
 		84BB5E7B25F653D700AE8CA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BB5E7A25F653D700AE8CA2 /* MainViewController.swift */; };
@@ -44,6 +46,9 @@
 		84043A8B25F6A1C300346170 /* DetaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaiViewController.swift; sourceTree = "<group>"; };
 		84043A9025F6C96300346170 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		84043A9825F6D03500346170 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		847D4D3725FD1F4A00189082 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		847D4D3B25FD4B3500189082 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		847D4D4625FD684900189082 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		84BB5E7325F653D700AE8CA2 /* MainPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BB5E7625F653D700AE8CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84BB5E7825F653D700AE8CA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +96,7 @@
 		84BB5E6A25F653D700AE8CA2 = {
 			isa = PBXGroup;
 			children = (
+				847D4D3725FD1F4A00189082 /* TestPlan.xctestplan */,
 				84BB5E7525F653D700AE8CA2 /* MainPractice */,
 				84BB5E8C25F653D800AE8CA2 /* MainPracticeTests */,
 				84BB5E9725F653D800AE8CA2 /* MainPracticeUITests */,
@@ -112,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				84BB5E7625F653D700AE8CA2 /* AppDelegate.swift */,
+				847D4D4625FD684900189082 /* AppSettings.swift */,
 				84BB5E7825F653D700AE8CA2 /* SceneDelegate.swift */,
+				847D4D3B25FD4B3500189082 /* LoginViewController.swift */,
 				84BB5E7A25F653D700AE8CA2 /* MainViewController.swift */,
 				84BB5EAC25F6566600AE8CA2 /* NavViewController.swift */,
 				84BB5EBC25F65BEE00AE8CA2 /* CollectionViewController.swift */,
@@ -283,7 +291,9 @@
 				84043A9925F6D03500346170 /* MapViewController.swift in Sources */,
 				84BB5E7725F653D700AE8CA2 /* AppDelegate.swift in Sources */,
 				84BB5EB525F658AA00AE8CA2 /* TableViewController.swift in Sources */,
+				847D4D4725FD684900189082 /* AppSettings.swift in Sources */,
 				84BB5E7925F653D700AE8CA2 /* SceneDelegate.swift in Sources */,
+				847D4D3C25FD4B3E00189082 /* LoginViewController.swift in Sources */,
 				84043A8C25F6A1C300346170 /* DetaiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

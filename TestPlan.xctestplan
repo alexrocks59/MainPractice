@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "C732097F-8CDA-4D0C-8117-1642CE7E9AD4",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "enabled" : false,
+      "target" : {
+        "containerPath" : "container:MainPractice.xcodeproj",
+        "identifier" : "84BB5E8825F653D800AE8CA2",
+        "name" : "MainPracticeTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:MainPractice.xcodeproj",
+        "identifier" : "84BB5E9325F653D800AE8CA2",
+        "name" : "MainPracticeUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
